@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCKiddieGo</title>
+<style>
+body{margin:0;font-family:Arial;color:#164477}
+header{padding:18px;text-align:center;background:#fff}
+.logo{font-size:32px;font-weight:bold;color:#ed3479}
+.logo span{color:#ff633f}
+nav{padding:15px;background:#e9f8ff;text-align:center}
+nav a{margin:8px;color:#164477;font-weight:bold;text-decoration:none}
+.hero{padding:45px 20px;text-align:center;background:linear-gradient(135deg,#dff7ff,#fff0f7)}
+.hero h1{font-size:42px}
+.pink{color:#ed3479}
+.btn{display:inline-block;background:#ed3479;color:white;padding:14px 22px;border-radius:25px;text-decoration:none;font-weight:bold}
+.services{padding:35px 15px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.card{padding:20px;background:white;border-radius:18px;box-shadow:0 3px 12px #0002}
+.icon{font-size:45px}
+.booking{margin:20px;padding:25px;background:#e1f6ff;border-radius:20px}
+input,select,button{width:100%;padding:13px;margin:7px 0;box-sizing:border-box;border-radius:9px;border:1px solid #ccc}
+button{background:#ed3479;color:white;border:0;font-weight:bold}
+footer{padding:25px;text-align:center;background:#164477;color:white}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">MC<span>KiddieGo</span> 🎈</div>
+<p>Kids Care • Learn • Play • Go!</p>
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#transport">Transportation</a>
+<a href="#booking">Booking</a>
+<a href="#areas">Areas</a>
+</nav>
+
+<section class="hero">
+<h1>Happy Kids,<br><span class="pink">Brighter Tomorrows!</span></h1>
+<p>Safe kids care, daycare, learning, play and transportation services.</p>
+<a class="btn" href="#booking">📅 Book a Reservation</a>
+</section>
+
+<section class="services" id="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🧸</div>
+<h3>Daycare</h3>
+<p>Safe and caring supervised childcare.</p>
+</div>
+
+<div class="card" id="transport">
+<div class="icon">🚌</div>
+<h3>Kids Bus Pickup & Drop-off</h3>
+<p>Safe school transportation service.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚐</div>
+<h3>Kids Transport</h3>
+<p>Pick-up and drop-off from home and school.</p>
+</div>
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>After-School Care</h3>
+<p>Homework, learning and play.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>Arts & Crafts</h3>
+<p>Fun creative activities.</p>
+</div>
+
+<div class="card">
+<div class="icon">👶</div>
+<h3>Toddler Care</h3>
+<p>Supervised toddler care.</p>
+</div>
+
+</div>
+</section>
+
+<section class="booking" id="booking">
+<h2>📅 Make a Reservation</h2>
+
+<form onsubmit="alert('Reservation request received!');return false">
+
+<input placeholder="Parent/Guardian Name" required>
+
+<input placeholder="Phone Number" required>
+
+<input placeholder="Email Address" required>
+
+<input placeholder="Child's Name" required>
+
+<select required>
+<option value="">Select Service</option>
+<option>Daycare</option>
+<option>Kids Bus Pickup & Drop-off</option>
+<option>Kids Transport Pick-up & Drop-off</option>
+<option>After-School Care</option>
+</select>
+
+<input type="date" required>
+
+<button>BOOK NOW</button>
+
+</form>
+</section>
+
+<section class="services" id="areas">
+<h2>Service Areas</h2>
+<p>Metro Manila • Bulacan • Cavite • Laguna • Rizal • Pampanga • Tarlac</p>
+</section>
+
+<footer>
+<strong>MCKiddieGo</strong><br>
+Kids Care • Learn • Play • Go!
+</footer>
+
+</body>
+</html>
